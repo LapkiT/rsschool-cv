@@ -1,38 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 .wrapper {
-    width: 1550px;
-    margin: 0 auto;
+    background: lightblue;
     display: flex;
-}
-
-.main {
-    min-height: 700px;
-    width: 50%;
-    left: 765px;
-    background-color: rgb(67, 82, 82);
-}
-
-.aside {
-    min-height: 700px;
-    width: 50%;
-    background-color: #4d4940;
-    display: flex;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
-img {
-    border-radius: 15%;
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
-.figure {
-    margin-left: 70px;
+.container .left_side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.container .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.fugcaption {
-    padding-top: 50px;
-    font-family: 'Unbounded', cursive;
-    font-size: 50px;
-    color: rgb(255, 212, 115);
+.profileText .imgBx {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h4 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.education h5 {
+    color: #03a9f4;
+    font-weight: 500;
+} 
+
+.contactInfo.languages .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.languages .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.about {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0px;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.section-list {
+    list-style: none;
+}
+
+.item_text {
+    color: #576268;
+}
+
+.about.code .box {
+    position: relative;
+    width: 270px;
+    left: 50px;
+    white-space: pre-wrap;
+}
+
+.header {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #003147;
+    height: 100px;
+    width: 100%;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    background: #003147;
+    height: 80px;
+    width: 100%;
+    right: 0px;
+    bottom: 0px;
+}
+
+.footer .box {
+    justify-content: center;
+    display: flex;
+}
+
+.footer .box .title a{
+    letter-spacing: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .box .icon {
+    padding-right: 15px;
+    color: #03a9f4;
+    font-size: 25px;
 }

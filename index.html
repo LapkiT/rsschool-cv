@@ -4,29 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV-TimurMarkovnikov</title>
-    <link rel = "stylesheet" href="assets/css/style.css">
-    <link rel = "stylesheet" href = "https://necolas.github.io/normalize.css/latest/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV-HTML</title>
 </head>
 <body>
     <div class="wrapper">
-        <aside class = "aside">
-            <figure class = "figure">
-                <img src="assets\img\photo_2022-12-14_15-35-52_photo-resizer.ru.jpg" alt="">
-                <figcaption class = "fugcaption">
-                    Timur Markovnikov
-                </figcaption>
-            </figure>
-        </aside>
+        <div class="container">
+            <aside class = "left_side">
+                <div class="profileText">
+                    <div class="imgBx">
+                        <img src="assets\img\photo_2022-11-19_23-29-27.jpg">
+                    </div>
+                    <h2>Timur Markovnikov<br><span>Front-end Developer</span></h2>
+                </div>
 
-        <main class = "main">
-            
-        </main>
+                <div class="contactInfo">
+                    <h3 class="title">Contact Info</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa-brands fa-discord"></i></span>
+                            <span class="text">Discord: Howfaralice#4416</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa-brands fa-telegram"></i></span>
+                            <span class="text"><a href="https://t.me/LapkiT">Telegram</a></span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fab fa-github"></i></span>
+                            <span class="text"><a href="https://github.com/SOSKI051">GitHub</a></span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Russia, Dagestan, Makhachkala</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contactInfo education">
+                    <h3 class="title">EDUCATION</h3>
+                    <ul>
+                        <li>
+                            <h5>Stepik</h5>
+                            <h4>Web development courses for beginners</h4>
+                        </li>
+                        <li>
+                            <h5>DevHouse</h5>
+                            <h4>Front-End Development Courses</h4>
+                        </li>
+                        <li>
+                            <h5>UDEMY</h5>
+                            <h4>JavaScript courses</h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contactInfo languages">
+                    <h3 class = "title">LANGUAGES</h3>
+                    <ul>
+                        <li>
+                            <span class="text">English</span>
+                            <span class="percent"><div style="width: 20%;"></div></span>
+                        </li>
+                        <li>
+                            <span class="text">Russia</span>
+                            <span class="percent"><div style="width: 95%;"></div></span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <aside class = "right_side">
+                <header class = "header">
+                    <nav class = "navbar">
+                        <a href = "#Profile"><h2 class="title">Profile</h2></a>
+                        <a href = "#SKILLS"><h2 class="title">SKILLS</h2></a>
+                        <a href = "#CODE"><h2 class="title">CODE</h2></a>
+                    </nav>
+                </header>
+                <div class="about">
+                    <h2 class="title2" id = "Profile">Profile</h2>
+                    <p>I like programming. It is fascinating and interesting. I have a main job, programming is a hobby for me. I have completed several training projects and now I would like to take part in the creation of a real JavaScript project. <br><br>My goal is to learn a pure JavaScript at a good level and learn the React library. I will be glad to join the creation of open source projects. I would like to work under the guidance of an experienced developer to gain practical experience.</p>
+                </div>
+                <div class="about">
+                    <h2 class="title2" id = "SKILLS">SKILLS</h2>
+                    <div class="box">
+                        <ul class="section-list">
+                            <li class="section-item">
+                                <span class = "icon"><i class="fa-sharp fa-solid fa-check"></i></span>
+                                Web-development: <span class="item_text">HTML5, CSS3, JavaScript</span>
+                            </li>
+                            <li class="section-item">
+                                <span class = "icon"><i class="fa-sharp fa-solid fa-check"></i></span>
+                                Frameworks and libraries: <span class="item_text">React</span>
+                            </li>
+                            <li class="section-item">
+                                <span class = "icon"><i class="fa-sharp fa-solid fa-check"></i></span>
+                                Version control: <span class="item_text">GIT, Github</span>
+                            </li>
+                            <li class="section-item">
+                                <span class = "icon"><i class="fa-sharp fa-solid fa-check"></i></span>
+                                Graphics: <span class="item_text">Figma</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about code">
+                    <h2 class="title2" id = "CODE">CODE</h2>
+                    <div class="box">
+                        let offset = 0;
+                        const sliderLine= document.querySelector('.slider-line');
+                        
+                        const btnNext = document.querySelector('.slider-next');
+                        btnNext.addEventListener('click', () => {
+                            offset = offset + 775;
+                            if (offset > 5425) offset = 0;
+                            sliderLine.style.left = -offset + 'px';
+                        })
+                    </div>
+                </div>
+
+                <footer class = "footer">
+                    <div class = "box">
+                        <span class="icon"><i class="fab fa-github"></i></span>
+                        <h2 class="title"><a href = "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/cv-stage0.md">RS-SCHOOL</a></h2>
+                    </div>
+                </footer>
+            </aside>
+        </div>
     </div>
-
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
